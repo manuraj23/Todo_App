@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="todo_app">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>todo_app</title>
+  <link rel="manifest" href="manifest.json">
+<!--  connecting firebase to flutter application-->
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyD_gPGdop-ECO1wpp4mkdcsmf6HZ4Va8lQ",
+      authDomain: "todo-with-sync.firebaseapp.com",
+      projectId: "todo-with-sync",
+      storageBucket: "todo-with-sync.appspot.com",
+      messagingSenderId: "122887292381",
+      appId: "1:122887292381:web:6bbcfe82d2982ff3c6e234",
+      measurementId: "G-D9JM1M2633"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <meta name="google-signin-client_id" content="122887292381-h5scous6d29vf6eg1ur7t9ad1fdo5pbr.apps.googleusercontent.com">
+  <!--  till here is the script for firebase-->
+
+
+
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
